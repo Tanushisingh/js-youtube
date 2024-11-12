@@ -38,3 +38,22 @@ Primitive Data Type (Call by Value) => 7 types: String, Number, Boolean, null, u
 7) BigInt -> BigIInt.
 And the Data Types of Non primitive data type is Function object. 
 */
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) -> Copy, Heap (Non-Primitive) -> Reference
+
+let myYoutubename="tanushi.com"
+let anothername="chaiaurcode"
+
+console.log(myYoutubename);//tanushi.com
+console.log(anothername);//chaiaurcode
+
+let userOne={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne;
+userTwo.email= "tanushi@google.com"
+console.log(userOne.email);//changed
+console.log(userTwo.email);//changed
+
